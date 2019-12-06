@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EF6074D98A0DD4725EFC6BA /* Pods_InTune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21ACEAC9D1C48DF8C8F6E77 /* Pods_InTune.framework */; };
+		B8CDF83A0C4655AF1DA0376E /* Pods_InTuneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F29C0FAB75CB4A7B3348488 /* Pods_InTuneTests.framework */; };
+		FD870589D270EF2C3FF79ECD /* Pods_InTune_InTuneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128ACFB5D316CF4CDBD6F6AD /* Pods_InTune_InTuneUITests.framework */; };
+		FE431EB7239612C200F7EFFB /* InTune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE431EB5239612C200F7EFFB /* InTune.xcdatamodeld */; };
+		FE431EB923961C3400F7EFFB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE431EB823961C3400F7EFFB /* SearchViewController.swift */; };
 		FE5261B1238663DD0098DC19 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5261B0238663DD0098DC19 /* Entry.swift */; };
 		FE8A50EE237DDA0300A5E51F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8A50ED237DDA0300A5E51F /* AppDelegate.swift */; };
 		FE8A50F0237DDA0300A5E51F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8A50EF237DDA0300A5E51F /* SceneDelegate.swift */; };
@@ -16,6 +21,13 @@
 		FE8A50FA237DDA0600A5E51F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8A50F8237DDA0600A5E51F /* LaunchScreen.storyboard */; };
 		FE8A5105237DDA0700A5E51F /* InTuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8A5104237DDA0700A5E51F /* InTuneTests.swift */; };
 		FE8A5110237DDA0700A5E51F /* InTuneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8A510F237DDA0700A5E51F /* InTuneUITests.swift */; };
+		FE923DEF2398503F00964418 /* EntryDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE923DEE2398503F00964418 /* EntryDB.swift */; };
+		FE923DF2239882FE00964418 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE923DF1239882FD00964418 /* QueryService.swift */; };
+		FE923DF4239898DA00964418 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE923DF3239898DA00964418 /* Song.swift */; };
+		FE923DF6239898E900964418 /* SongDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE923DF5239898E900964418 /* SongDB.swift */; };
+		FEEC775323995FC900E893D3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC775223995FC900E893D3 /* AddViewController.swift */; };
+		FEEC775523995FDD00E893D3 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC775423995FDD00E893D3 /* EntryViewController.swift */; };
+		FEEC775723997DE700E893D3 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC775623997DE700E893D3 /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		128ACFB5D316CF4CDBD6F6AD /* Pods_InTune_InTuneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTune_InTuneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDF4828C8B3649ED59F9C87 /* Pods-InTuneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTuneTests.debug.xcconfig"; path = "Target Support Files/Pods-InTuneTests/Pods-InTuneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F29C0FAB75CB4A7B3348488 /* Pods_InTuneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTuneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83156AB602C52CDB16A9CEB0 /* Pods-InTune-InTuneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTune-InTuneUITests.release.xcconfig"; path = "Target Support Files/Pods-InTune-InTuneUITests/Pods-InTune-InTuneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		831D943FD1918BD98653ECF9 /* Pods-InTuneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTuneTests.release.xcconfig"; path = "Target Support Files/Pods-InTuneTests/Pods-InTuneTests.release.xcconfig"; sourceTree = "<group>"; };
+		B32127692C895537FDFAFF07 /* Pods-InTune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTune.release.xcconfig"; path = "Target Support Files/Pods-InTune/Pods-InTune.release.xcconfig"; sourceTree = "<group>"; };
+		C3DE1A30DC56FD428F473E15 /* Pods-InTune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTune.debug.xcconfig"; path = "Target Support Files/Pods-InTune/Pods-InTune.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C84DB073AB3D6BE72C5998 /* Pods-InTune-InTuneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTune-InTuneUITests.debug.xcconfig"; path = "Target Support Files/Pods-InTune-InTuneUITests/Pods-InTune-InTuneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F21ACEAC9D1C48DF8C8F6E77 /* Pods_InTune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE431EB6239612C200F7EFFB /* InTune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InTune.xcdatamodel; sourceTree = "<group>"; };
+		FE431EB823961C3400F7EFFB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FE5261B0238663DD0098DC19 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		FE8A50EA237DDA0300A5E51F /* InTune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8A50ED237DDA0300A5E51F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +74,13 @@
 		FE8A510B237DDA0700A5E51F /* InTuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InTuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8A510F237DDA0700A5E51F /* InTuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTuneUITests.swift; sourceTree = "<group>"; };
 		FE8A5111237DDA0700A5E51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE923DEE2398503F00964418 /* EntryDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDB.swift; sourceTree = "<group>"; };
+		FE923DF1239882FD00964418 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		FE923DF3239898DA00964418 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		FE923DF5239898E900964418 /* SongDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDB.swift; sourceTree = "<group>"; };
+		FEEC775223995FC900E893D3 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		FEEC775423995FDD00E893D3 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		FEEC775623997DE700E893D3 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF6074D98A0DD4725EFC6BA /* Pods_InTune.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CDF83A0C4655AF1DA0376E /* Pods_InTuneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD870589D270EF2C3FF79ECD /* Pods_InTune_InTuneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C65E32D7D8EA4573EC383B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE1A30DC56FD428F473E15 /* Pods-InTune.debug.xcconfig */,
+				B32127692C895537FDFAFF07 /* Pods-InTune.release.xcconfig */,
+				F1C84DB073AB3D6BE72C5998 /* Pods-InTune-InTuneUITests.debug.xcconfig */,
+				83156AB602C52CDB16A9CEB0 /* Pods-InTune-InTuneUITests.release.xcconfig */,
+				5DDF4828C8B3649ED59F9C87 /* Pods-InTuneTests.debug.xcconfig */,
+				831D943FD1918BD98653ECF9 /* Pods-InTuneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73E614127C19D3F0D272274D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21ACEAC9D1C48DF8C8F6E77 /* Pods_InTune.framework */,
+				128ACFB5D316CF4CDBD6F6AD /* Pods_InTune_InTuneUITests.framework */,
+				5F29C0FAB75CB4A7B3348488 /* Pods_InTuneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE8A50E1237DDA0300A5E51F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +141,8 @@
 				FE8A5103237DDA0700A5E51F /* InTuneTests */,
 				FE8A510E237DDA0700A5E51F /* InTuneUITests */,
 				FE8A50EB237DDA0300A5E51F /* Products */,
+				55C65E32D7D8EA4573EC383B /* Pods */,
+				73E614127C19D3F0D272274D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +161,14 @@
 			children = (
 				FE8A50ED237DDA0300A5E51F /* AppDelegate.swift */,
 				FE8A50EF237DDA0300A5E51F /* SceneDelegate.swift */,
-				FE8A50F1237DDA0300A5E51F /* ViewController.swift */,
 				FE8A50F3237DDA0300A5E51F /* Main.storyboard */,
+				FE923DF0239882E800964418 /* Networking */,
+				FE923DED23984F6F00964418 /* Model */,
+				FE923DEC23984F3300964418 /* ViewController */,
+				FE431EB5239612C200F7EFFB /* InTune.xcdatamodeld */,
 				FE8A50F6237DDA0600A5E51F /* Assets.xcassets */,
 				FE8A50F8237DDA0600A5E51F /* LaunchScreen.storyboard */,
 				FE8A50FB237DDA0600A5E51F /* Info.plist */,
-				FE5261B0238663DD0098DC19 /* Entry.swift */,
 			);
 			path = InTune;
 			sourceTree = "<group>";
@@ -131,6 +191,37 @@
 			path = InTuneUITests;
 			sourceTree = "<group>";
 		};
+		FE923DEC23984F3300964418 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE431EB823961C3400F7EFFB /* SearchViewController.swift */,
+				FE8A50F1237DDA0300A5E51F /* ViewController.swift */,
+				FEEC775223995FC900E893D3 /* AddViewController.swift */,
+				FEEC775423995FDD00E893D3 /* EntryViewController.swift */,
+				FEEC775623997DE700E893D3 /* ColorPickerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE923DED23984F6F00964418 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE923DF3239898DA00964418 /* Song.swift */,
+				FE5261B0238663DD0098DC19 /* Entry.swift */,
+				FE923DEE2398503F00964418 /* EntryDB.swift */,
+				FE923DF5239898E900964418 /* SongDB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE923DF0239882E800964418 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FE923DF1239882FD00964418 /* QueryService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE8A5114237DDA0700A5E51F /* Build configuration list for PBXNativeTarget "InTune" */;
 			buildPhases = (
+				452966CD24AA146F278B923C /* [CP] Check Pods Manifest.lock */,
 				FE8A50E6237DDA0300A5E51F /* Sources */,
 				FE8A50E7237DDA0300A5E51F /* Frameworks */,
 				FE8A50E8237DDA0300A5E51F /* Resources */,
+				CE5161D5AB44E2EC7FDE1402 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE8A5117237DDA0700A5E51F /* Build configuration list for PBXNativeTarget "InTuneTests" */;
 			buildPhases = (
+				26CB82F650F96D6597EFEA0B /* [CP] Check Pods Manifest.lock */,
 				FE8A50FC237DDA0700A5E51F /* Sources */,
 				FE8A50FD237DDA0700A5E51F /* Frameworks */,
 				FE8A50FE237DDA0700A5E51F /* Resources */,
@@ -173,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE8A511A237DDA0700A5E51F /* Build configuration list for PBXNativeTarget "InTuneUITests" */;
 			buildPhases = (
+				24A7EF38DC97EB520FB61CC7 /* [CP] Check Pods Manifest.lock */,
 				FE8A5107237DDA0700A5E51F /* Sources */,
 				FE8A5108237DDA0700A5E51F /* Frameworks */,
 				FE8A5109237DDA0700A5E51F /* Resources */,
+				3D5486E3E09E5322B69F4FDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,14 +353,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24A7EF38DC97EB520FB61CC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTune-InTuneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26CB82F650F96D6597EFEA0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTuneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D5486E3E09E5322B69F4FDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTune-InTuneUITests/Pods-InTune-InTuneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTune-InTuneUITests/Pods-InTune-InTuneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InTune-InTuneUITests/Pods-InTune-InTuneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452966CD24AA146F278B923C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTune-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5161D5AB44E2EC7FDE1402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTune/Pods-InTune-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTune/Pods-InTune-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InTune/Pods-InTune-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE8A50E6237DDA0300A5E51F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEC775723997DE700E893D3 /* ColorPickerViewController.swift in Sources */,
+				FE923DF4239898DA00964418 /* Song.swift in Sources */,
+				FE431EB923961C3400F7EFFB /* SearchViewController.swift in Sources */,
 				FE5261B1238663DD0098DC19 /* Entry.swift in Sources */,
+				FEEC775323995FC900E893D3 /* AddViewController.swift in Sources */,
+				FE923DEF2398503F00964418 /* EntryDB.swift in Sources */,
+				FEEC775523995FDD00E893D3 /* EntryViewController.swift in Sources */,
 				FE8A50F2237DDA0300A5E51F /* ViewController.swift in Sources */,
+				FE923DF2239882FE00964418 /* QueryService.swift in Sources */,
+				FE431EB7239612C200F7EFFB /* InTune.xcdatamodeld in Sources */,
 				FE8A50EE237DDA0300A5E51F /* AppDelegate.swift in Sources */,
+				FE923DF6239898E900964418 /* SongDB.swift in Sources */,
 				FE8A50F0237DDA0300A5E51F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +644,7 @@
 		};
 		FE8A5115237DDA0700A5E51F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DE1A30DC56FD428F473E15 /* Pods-InTune.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +663,7 @@
 		};
 		FE8A5116237DDA0700A5E51F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32127692C895537FDFAFF07 /* Pods-InTune.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +682,7 @@
 		};
 		FE8A5118237DDA0700A5E51F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDF4828C8B3649ED59F9C87 /* Pods-InTuneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +705,7 @@
 		};
 		FE8A5119237DDA0700A5E51F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831D943FD1918BD98653ECF9 /* Pods-InTuneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +728,7 @@
 		};
 		FE8A511B237DDA0700A5E51F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C84DB073AB3D6BE72C5998 /* Pods-InTune-InTuneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +749,7 @@
 		};
 		FE8A511C237DDA0700A5E51F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83156AB602C52CDB16A9CEB0 /* Pods-InTune-InTuneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +808,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE431EB5239612C200F7EFFB /* InTune.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE431EB6239612C200F7EFFB /* InTune.xcdatamodel */,
+			);
+			currentVersion = FE431EB6239612C200F7EFFB /* InTune.xcdatamodel */;
+			path = InTune.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE8A50E2237DDA0300A5E51F /* Project object */;
 }
